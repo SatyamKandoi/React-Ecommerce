@@ -2,8 +2,6 @@ import {
 	Navbar,
 	NavbarBrand,
 	NavbarContent,
-	NavbarItem,
-	Link,
 	Input,
 	DropdownItem,
 	DropdownTrigger,
@@ -13,6 +11,7 @@ import {
 } from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo.tsx";
 import { SearchIcon } from "./SearchIcon.tsx";
+import CartBadge from "./CartBadge.tsx";
 
 export default function Header() {
 	return (
@@ -63,6 +62,7 @@ export default function Header() {
 						</DropdownItem>
 					</DropdownMenu>
 				</Dropdown>
+				<CartBadge />
 			</NavbarContent>
 		</Navbar>
 	);
