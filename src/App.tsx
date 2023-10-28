@@ -1,13 +1,10 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Products from "./components/Products";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 export default function App() {
 	return (
-		<div>
-			<Header />
-			<Hero />
-			<Products />
-		</div>
+		<Routes>
+			<Route path="/" element={<Home />}></Route>
+		</Routes>
 	);
 }
